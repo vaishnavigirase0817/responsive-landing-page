@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkillCraft Internship Project</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="notification" role="status" aria-live="polite">
+    🚀 Welcome to the SkillCraft Internship Project — build, learn & ship!
+    <button class="close-notif" aria-label="Close notification">✕</button>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand">
+        <h1 class="logo">SkillCraft</h1>
+        <button id="mobileToggle" class="mobile-toggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+      </div>
+
+      <div id="mainNav" class="nav-wrap">
+        <ul class="nav-links" role="menu">
+          <li role="none"><a role="menuitem" href="#home">Home</a></li>
+          <li role="none"><a role="menuitem" href="#features">Features</a></li>
+          <li role="none"><a role="menuitem" href="#services">Services</a></li>
+          <li role="none"><a role="menuitem" href="#stats">Stats</a></li>
+          <li role="none"><a role="menuitem" href="#testimonials">Testimonials</a></li>
+          <li role="none"><a role="menuitem" href="#faq">FAQ</a></li>
+          <li role="none"><a role="menuitem" href="#about">About</a></li>
+          <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-controls">
+          <input id="searchBar" type="search" placeholder="Search features/services..." aria-label="Search content">
+          <button id="themeToggle" aria-pressed="false" title="Toggle dark mode">🌙</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h2>Responsive & Interactive Internship Project</h2>
+          <p class="lead">A polished front-end demo built for the SkillCraft Technology Internship — responsive, accessible and feature-rich.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" id="learnMore" href="#features">Learn More</a>
+            <a class="btn outline" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+
+          <div class="card-surface">
+            <h3>Project Preview</h3>
+            <p>Clean UI • Smooth Animations • Accessible</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Key Features</h2>
+        <div class="grid feature-grid" id="featureCards">
+          <div class="card feature-card">Responsive Layout</div>
+          <div class="card feature-card">Dark / Light Mode</div>
+          <div class="card feature-card">Search Filtering</div>
+          <div class="card feature-card">Animated Counters</div>
+          <div class="card feature-card">FAQ Accordion</div>
+          <div class="card feature-card">Auto Testimonials</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section alt">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid service-grid" id="serviceCards">
+          <div class="card service-card">Web Development</div>
+          <div class="card service-card">UI/UX Design</div>
+          <div class="card service-card">SEO Optimization</div>
+          <div class="card service-card">Performance Tuning</div>
+          <div class="card service-card">Code Reviews</div>
+          <div class="card service-card">Deployment Support</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats" class="section">
+      <div class="container stats-wrap">
+        <h2>Our Achievements</h2>
+        <div class="stats-grid" aria-hidden="false">
+          <div class="stat">
+            <span class="counter" data-target="500">0</span>
+            <p>Projects</p>
+          </div>
+          <div class="stat">
+            <span class="counter" data-target="120">0</span>
+            <p>Happy Clients</p>
+          </div>
+          <div class="stat">
+            <span class="counter" data-target="8">0</span>
+            <p>Years Experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section alt">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="testimonial-wrap" aria-live="polite">
+          <blockquote id="testimonialText" class="testimonial">"Amazing work! Highly recommended."</blockquote>
+          <div class="testimonial-meta" id="testimonialMeta">— Client A</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">What is SkillCraft Internship? <span class="icon">+</span></button>
+            <div class="faq-a" hidden>SkillCraft Internship is a hands-on training program where participants build real projects and gain mentorship.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Is this project responsive? <span class="icon">+</span></button>
+            <div class="faq-a" hidden>Yes — the layout adapts for mobile, tablet and desktop screens and uses accessible markup.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">Can I reuse this code for my portfolio? <span class="icon">+</span></button>
+            <div class="faq-a" hidden>Absolutely — adapt the design, replace content and use it in your portfolio or internship submission.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2>About This Project</h2>
+        <p>This project is built with plain HTML, CSS and vanilla JavaScript, following best practices for readability, responsiveness and accessibility — perfect for demonstrating front-end skills during the SkillCraft internship.</p>
+      </div>
+    </section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <label>
+            <span class="label-text">Name</span>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </label>
+          <label>
+            <span class="label-text">Email</span>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </label>
+        </div>
+
+        <label>
+          <span class="label-text">Message</span>
+          <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Send Message</button>
+          <button type="reset" class="btn outline">Reset</button>
+        </div>
+
+        <div id="formMessage" role="status" aria-live="polite" class="form-message" hidden></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
